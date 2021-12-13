@@ -5,13 +5,9 @@ const app = express()
 app.use(express.json())
 
 
-const productController = require("./controllers/product.controller")
+const ProductController = require("./controllers/product.controller")
 
-app.use("/products", productController)
-
-
-
-
+app.use("/products", ProductController)
 
 module.exports = app;
 
